@@ -2,6 +2,8 @@
 /**
  * _islower - Entry point
  *
+ *@c: input
+ *
  * Return: Always 0 (Success)
  */
 int _islower(int c)
