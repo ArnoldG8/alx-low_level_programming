@@ -9,7 +9,7 @@ void _puts(char *s)
 {
 	int i = 0;
 
-	while (i > 0)
+	while (i >= 0)
 	{
 		if (s[i] == '\0')
 		{
@@ -19,5 +19,4 @@ void _puts(char *s)
 		putchar(s[i]);
 		i++;
 	}
-	putchar('\n');
 }
