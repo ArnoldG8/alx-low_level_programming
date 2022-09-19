@@ -13,10 +13,10 @@ void _puts(char *s)
 	{
 		if (s[i] == '\0')
 		{
-			_putchar('\n');
+			putchar('\n');
 			break;
 		}
-		_putchar(s[i]);
+		putchar(s[i]);
 		i++;
 	}
 	putchar('\n');
