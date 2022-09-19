@@ -9,7 +9,7 @@ void _puts(char *s)
 {
 	int i = 0;
 
-	while(i >= 0)
+	while (true)
 	{
 		if (s[i] == '\0')
 		{
