@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * _strcat - Concatenation function
  * main - main function
@@ -8,7 +8,7 @@
  * @src: second input
  * Return: string
  */
-char _strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int count = 0;
@@ -23,10 +23,10 @@ char _strcat(char *dest, char *src)
 		count += 1;
 	}
 	dest[count] = '\0';
-	return (*dest);
+	return (dest);
 }
 
-int main(void)
+int main()
 {
 	_strcat(char *dest, char *src);
 }
