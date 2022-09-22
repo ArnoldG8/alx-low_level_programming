@@ -3,6 +3,7 @@
 
 /**
  * _strcat - Concatenation function
+ * main - main function
  * @dest: first input
  * @src: second input
  * Return: string
@@ -23,4 +24,9 @@ char *_strcat(char *dest, char *src)
 	}
 	dest[count] = '\0';
 	return (dest);
+}
+
+int main(void)
+{
+	_strcat(char *dest, char *src);
 }
