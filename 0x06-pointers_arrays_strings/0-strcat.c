@@ -11,12 +11,18 @@
  */
 char *_strcat(char *dest, const char *src)
 {
-	strcat(*dest, *src);
+	int count;
+	int n;
 
-	return (*dest);
-}
-
-int main()
-{
-	_strcat(char *dest, char *src);
+	while (*(dest + count))
+	{
+		count++;
+	}
+	while (*(src + n))
+	{
+		dest[count] = *(src + n);
+		count++;
+		n++;
+	}
+	return (dest);
 }
