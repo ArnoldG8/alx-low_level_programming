@@ -9,9 +9,9 @@
  * @src: second input
  * Return: string
  */
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, const char *src)
 {
-	char *strcat(char *dest, const char *src);
+	strcat(*dest, *src);
 
 	return (*dest);
 }
