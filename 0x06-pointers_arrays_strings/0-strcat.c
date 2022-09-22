@@ -1,28 +1,26 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-/**
- * _strcat - Concatenation function
- * main - main function
- * @dest: first input
- * @src: second input
- * Return: string
- */
-char *_strcat(char *dest, const char *src)
-{
-	int count;
-	int n;
 
-	while (*(dest + count))
+/**
+ *  *_strcat - combines two strings
+ *  @dest: first string
+ *  @src: second string
+ *
+ *  Return: char
+ */
+char *_strcat(char *dest, char *src)
+{
+	int len = 0;
+	int add = 0;
+
+	while (*(dest + len))
 	{
-		count++;
+		len++;
 	}
-	while (*(src + n))
+	while (*(src + add))
 	{
-		dest[count] = *(src + n);
-		count++;
-		n++;
+		dest[len] = *(src + add);
+		len++;
+		add++;
 	}
 	return (dest);
 }
