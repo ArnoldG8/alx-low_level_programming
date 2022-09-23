@@ -11,20 +11,22 @@
 
 char *_strncat(char * dest, char *src, int n)
 {
-	int dlen = 0, i = 0;
+	int x = 0, i = 0;
 
 	while (*(dest + i))
 	{
 		i++;
 	}
 
-	while (dlen < n && *(src + dlen))
+	while (x < n && *(src + x))
 	{
-		*(dest + i) = *(src + dlen);
-		dlen++;
+		*(dest + i) = *(src + x);
+		x++;
 		i++;
 	}
-	if (dlen < n)
-		*(dest + i) = *(src + j);
+	if (x < n)
+	{
+		*(dest + i) = *(src + x);
+	}
 	return (dest);
 }
