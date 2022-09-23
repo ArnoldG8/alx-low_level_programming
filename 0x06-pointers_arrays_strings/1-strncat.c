@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * _strncat - concatenate two string with certain of
- * @dest: string being concatenated 
- * @src: string concatenating 
- * @n: number of value 
+ * _strncat - appends src to the dest string
+ * @dest: string to append by src
+ * @src: string to append to dest
+ * @n: largest number of bytes to append
  *
- * Return: string 
+ * Return: address of dest
  */
-
-char *_strncat(char * dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int x = 0, i = 0;
 
