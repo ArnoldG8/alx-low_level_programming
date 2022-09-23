@@ -2,8 +2,8 @@
 
 /**
  * _strncat - concatenate two string with certain of
- * @src: string concatenating 
  * @dest: string being concatenated 
+ * @src: string concatenating 
  * @n: number of value 
  *
  * Return: string 
