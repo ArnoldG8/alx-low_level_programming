@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _memset - function for replace data
- *
- * @s: string to be overwritten
- * @b: byte to use for overwritting
- * @n: number of bytes
+ * _memset - prints buffer in hexa
+ * @s: first input
+ * @b: second input
+ * @n: third input
+ * Return: s.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
