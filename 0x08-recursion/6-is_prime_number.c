@@ -19,7 +19,7 @@ int is_prime_number(int n)
  */
 int pnum(int x, int y)
 {
-	if (x == 1)
+	if (x <= 1)
 		return (0);
 	if (x % y == 0 && y > 1)
 		return (0);
