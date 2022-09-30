@@ -1,1 +1,1 @@
-Multidimensional arrays and double pointers, alongisde dereferencing a dereference.
+Multidimensional arrays and double pointers.
