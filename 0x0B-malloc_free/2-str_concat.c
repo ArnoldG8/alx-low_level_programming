@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *  *_str_concat - combines two strings
+ *  *str_concat - combines two strings
  *  @s1: first string
  *  @s2: second string
  *
@@ -16,10 +16,6 @@ char *str_concat(char *s1, char *s2)
 	int j;
 	char *s;
 
-	if (s1 == NULL || s2 == NULL)
-	{
-		return ('\0');
-	}
 	while (*(s1 + c) != '\0')
 		c++;
 	while (*(s2 + n) != '\0')
