@@ -1,17 +1,17 @@
 #include "3-calc.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
-* main - calls other functions
-* @argc: argument count
-* @argv: argument vector
-*
-* Return: error if conditions not met
-*/
+ * main - check the code for Holberton School students.
+ * @argc: argument count.
+ * @argv: argument vector.
+ *
+ * Return: Always 0.
+ */
 int main(int argc, char *argv[])
 {
-	int i = 0, j = 0, ret = 0;
-	char s;
+	int a, b;
+	int (*operation)(int, int);
 
 	if (argc != 4)
 	{
@@ -19,22 +19,23 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (argv[2][1] != '\0')
+	if (argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	s = argv[2][0];
-	if (s != '+' && s != '-' && s != '/' && s != '*' && s != '%')
+	operation = get_op_func(argv[2]);
+
+	if (operation == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	i = atoi(argv[1]);
-	j = atoi(argv[3]);
-	ret = (get_op_func(argv[2]))(i, j);
-	printf("%d\n", ret);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+
+	printf("%d\n", operation(a, b));
 	return (0);
 }
